@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fustat', sans-serif;
+    letter-spacing: .125vw;
+    color: white;
+}
+
+#gameBoard {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4% 0 0 25%;
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    width: 50%;
+}
+
+.row2 {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.col2 {
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.cell {
+    font-family: 'Fustat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5vw;
+    flex: 1;
+    text-align: center;
+    width: 115%;
+    box-sizing: border-box;
+}
+
+.cell .content {
+    font-size: 5vw;
+    height: 7vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.transition {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+#winner {
+    font-family: 'Fustat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: 2vw 0 0 45.5vw;
+    display: block;
+    color: white;
+}
+
+.cell:Hover {
+    cursor: pointer;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 2vw;
+}
+
+button {
+    width: 7vw;
+    height: 2.5vw;
+    border-radius: 3%;
+    border: 1px solid black;
+    font-size: 1vw;
+}
+
+button:nth-child(1) {
+    background-color: #2E236C;
+    border-color: #2E236C;
+    color: beige;
+}
+
+button:nth-child(2) {
+    background-color: #050C9C;
+    border-color: #050C9C;
+    color: beige;
+}
+
+button:nth-child(3) {
+    background-color: #FF7D29;
+    border-color: #FF7D29;
+    color: beige;
+}
+
+.buttonHover {
+    cursor: pointer;
+}
+
+span {
+    color: white;
+}

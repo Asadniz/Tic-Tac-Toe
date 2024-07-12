@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\TicTacToe\ticTacToe.css">
+</head>
+
+<body>
+    <div id='header'>
+        <h1>Tic-Tac-Toe!</h1>
+    </div>
+    <div id='gameBoard'>
+        <div class='row1'>
+            <div class='cell col1' data-index='1'><span class="content"></span></div>
+            <div class='cell col2' data-index='2'><span class="content"></span></div>
+            <div class='cell col3' data-index='3'><span class="content"></span></div>
+        </div>
+        <div class='row2'>
+            <div class='cell col1' data-index='4'><span class="content"></span></div>
+            <div class='cell col2' data-index='5'><span class="content"></span></div>
+            <div class='cell col3' data-index='6'><span class="content"></span></div>
+        </div>
+        <div class='row3'>
+            <div class='cell col1' data-index='7'><span class="content"></span></div>
+            <div class='cell col2' data-index='8'><span class="content"></span></div>
+            <div class='cell col3' data-index='9'><span class="content"></span></div>
+        </div>
+    </div>
+    <div><span id='winner'></span></div>
+    <div id='buttons'>
+        <button id='resetButton'>Reset</button>
+        <button id='vsHuman'> Vs. Human</button>
+        <button id='vsBot'>Vs. CPU</button>
+    </div>
+    <script src='C:\TicTacToe\ticTacToe.js'></script>
+</body>
+
+</html>
